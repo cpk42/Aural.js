@@ -43,10 +43,6 @@ class Aural {
       else
         console.log("Database " + this.config.name + " already exists...")
     }
-    else if (!fs.existsSync(this.file)){
-        fs.mkdirSync(this.file);
-        this.init()
-    }
     else {
       var entry = this.config
       entry.configPresent = true
