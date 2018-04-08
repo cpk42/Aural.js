@@ -138,7 +138,7 @@ class Aural {
   }
 
   help() {
-      console.log('Create a new class with:\n var db = new Aural("name", "fileName.json", schema)\nNote that schema is an object template used as the schematic for the entirety of the Database\n\ndb.init():\nInitialize an empty database\n\ndb.addEntry(entry):\nAdd a JSON object as an entry\n\ndb.getEntry(0):\nGet an Entry at its given index\n\ndb.numEntries():\nGet number of entries\n\ndb.listEntries():\nList all entries\n\ndb.removeEntry(0):\nRemove an entry at its given index\n\ndb.clear():\nClear the JSON file\n')
+      console.log('Create a new class with:\nvar db = new Aural("name", "fileName.json", schema)\nNote that schema is an object template used as the schematic for the entirety of the Database\n\ndb.init():\nInitialize an empty database\n\ndb.addEntry(entry):\nAdd a JSON object as an entry\n\ndb.getEntry(0):\nGet an Entry at its given index\n\ndb.numEntries():\nGet number of entries\n\ndb.listEntries():\nList all entries\n\ndb.removeEntry(0):\nRemove an entry at its given index\n\ndb.clear():\nClear the JSON file\n')
   }
 }
 
