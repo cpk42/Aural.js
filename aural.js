@@ -11,7 +11,7 @@ class Aural {
   }
 
   writeToFile(str) {
-    fs.writeFile(this.config.file, str, (err) => {
+    fs.writeFileSync(this.config.file, str, (err) => {
       if (err)
           throw error
     })
