@@ -138,21 +138,22 @@ class Aural {
   }
 }
 
-function main(){
-  var schema = {
-    "phrase": "",
-    "response": "",
-    "voice": ""
-  }
-  var db = new Aural(configure, "newAural", "db.json", schema)
-
-  // db.init()
-  // db.run()
-  // db.addEntry()
-  // db.getEntry(0)
-  // db.numEntries()
-  // db.listEntries()
-  // db.removeEntry(0)
-  // db.clear()
-}
-main();
+module.exports = Aural;
+// function main(){
+//   var schema = {
+//     "phrase": "",
+//     "response": "",
+//     "voice": ""
+//   }
+//   var db = new Aural(configure, "newAural", "db.json", schema)
+//
+//   // db.init()
+//   // db.run()
+//   // db.addEntry()
+//   // db.getEntry(0)
+//   // db.numEntries()
+//   // db.listEntries()
+//   // db.removeEntry(0)
+//   // db.clear()
+// }
+// main();
