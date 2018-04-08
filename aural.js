@@ -3,7 +3,7 @@ const configure = require("./config.js")
 const readline = require('readline');
 
 class Aural {
-  constructor(config, name, fileName, schema) {
+  constructor(name, fileName, schema) {
       this.config = Object.assign(configure)
       this.config.name = name
       this.config.file = fileName
