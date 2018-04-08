@@ -51,14 +51,14 @@ class Aural {
     }
   }
 
-  addEntry() {
+  addEntry(entry) {
     var file = fs.readFileSync(this.config.file, this.config.encoding)
     if (file) {
       var entries = JSON.parse(file)
       if (entries.configPresent) {
           console.log('Added entry to ' + this.config.name + '!')
           entries.numEntries += 1
-          entries.entries.push(this.config.schema)
+          entries.entries.push(entry)
           this.writeToFile(JSON.stringify(entries))
       }
       else {
