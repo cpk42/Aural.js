@@ -1,5 +1,4 @@
-module.exports =
-{
+var defaultConfig = {
   "name": "",
   "file": "",
   "schema": {},
@@ -8,3 +7,8 @@ module.exports =
   "configPresent": false,
   "encoding": "utf-8"
 }
+var defaultSchema = {
+    "data": {}
+}
+
+module.exports = { defaultSchema, defaultConfig }
