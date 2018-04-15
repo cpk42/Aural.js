@@ -148,7 +148,6 @@ module.exports = Aural;
 //     "voice": ""
 //   }
 //   var db = new Aural(configure, "newAural", "db.json", schema)
-//
 //   // db.init()
 //   // db.run()
 //   // db.addEntry()
