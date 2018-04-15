@@ -1,6 +1,7 @@
 const fs = require('fs');
-const config = require("./config.js")
+const config = require("../models/config.js")
 const readline = require('readline');
+const path = require('path');
 
 class Aural {
     constructor(name, fileName, userSchema) {
@@ -11,21 +12,21 @@ class Aural {
     }
 
     writeToFile(str) {
-        fs.writeFileSync(this.config.file, str, (err) => {
+        fs.writeFileSync(this.file, str, (err) => {
             if (err)
                 throw error
         })
     }
 
     removeEntry(index) {
-        var file = fs.readFileSync(this.config.file, this.config.encoding)
+        var file = fs.readFileSync(this.file, this.config.encoding)
         if (file) {
             var entries = JSON.parse(file)
             if (entries.numEntries > 0) {
                 entries.entries.splice(index, 1)
                 entries.numEntries -= 1
                 this.writeToFile(JSON.stringify(entries))
-                console.log('Removed entry from ' + this.config.name + '!')
+                console.log('Removed entry from ' + this.name + '!')
             } else {
                 console.log('No data to remove!')
             }
