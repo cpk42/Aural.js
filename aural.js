@@ -45,6 +45,7 @@ class Aural {
             } else
                 console.log("Database " + this.name + " already exists...")
         } else {
+            console.log('Creating Empty Database');
             var entry = this.config
             entry.configPresent = true
             fs.closeSync(fs.openSync(this.file, 'w'));
