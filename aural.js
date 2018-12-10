@@ -1,5 +1,5 @@
 const fs = require('fs');
-const config = require("../models/config.js")
+const config = require("./config.js")
 const readline = require('readline');
 const path = require('path');
 
