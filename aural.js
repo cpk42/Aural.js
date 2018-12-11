@@ -125,6 +125,19 @@ class Aural {
         }
     }
 
+    getAll() {
+        var file = fs.readFileSync(this.file, this.config.encoding)
+
+        if (file) {
+            var entries = JSON.parse(file)
+            if (entries.configPresent) {
+                return (entries)
+            }
+        } else {
+            console.log()
+        }
+    }
+    
     listEntries() {
         var file = fs.readFileSync(this.file, this.config.encoding)
         var entry = JSON.parse(file)
